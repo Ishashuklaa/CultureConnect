@@ -1423,6 +1423,8 @@ import CardList from './CardList';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TextileCategoriesWheel from './TextileCategoriesWheel.js';
+import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 
 const ExploreIndia = () => {
@@ -1476,8 +1478,9 @@ const ExploreIndia = () => {
     startScrambling();
   }
 
+
   const states = [
-    { name: 'Madhya Pradesh', imgSrc: 'https://www.humsamvet.com/uploads/images/2023/04/image_1200x675_643565540270b.jpg', description: 'Explore Madhya Pradesh.' },
+    { name: 'Madhya Pradesh', imgSrc: 'https://www.humsamvet.com/uploads/images/2023/04/image_1200x675_643565540270b.jpg', description: 'Explore Madhya Pradesh.', link: '/madhya-pradesh'},
     { name: 'Kerala', imgSrc: 'http://www.mnkindustry.com/wp-content/uploads/2017/11/dsc_0667.jpg', description: 'Discover Kerala.' },
     { name: 'Maharashtra', imgSrc: 'https://rooftopapp.com/wp-content/uploads/2023/04/Tribal-Art-3.jpg', description: 'Explore Maharashtra.' },
     { name: 'Rajasthan', imgSrc: 'https://routeprints.com/wp-content/uploads/2019/05/Rajasthan-Tradition-1.png', description: 'Discover Rajasthan.' },
@@ -1525,6 +1528,7 @@ const ExploreIndia = () => {
   <h2 id="header-text">Explore India</h2>
 
   <div className="state-cards">
+    
     {states.map((state, index) => (
       <motion.div
         key={index}
@@ -1534,7 +1538,7 @@ const ExploreIndia = () => {
         transition={{ delay: 0.1 * index }}
       >
         <img src={state.imgSrc} alt={state.name} />
-        <h3>{state.name}</h3>
+        <Link to={state.link}><h3>{state.name}</h3></Link> 
         <p>{state.description}</p>
       </motion.div>
     ))}
@@ -1589,14 +1593,8 @@ const ExploreIndia = () => {
         <section>
           <CardList/>
         </section>
-
-    
-  
+        
 </section>
-
-
-
-
       <Footer />
     </div>
   );
