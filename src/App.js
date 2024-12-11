@@ -14,6 +14,7 @@ import Japan from './components/Japan';
 import ArtGallery from './components/ArtGallery';
 import bgvideo from "./assests/bgvideo.mp4"
 import { useLocation } from 'react-router-dom';
+import MpPage from './components/MpPage';
 
 import './App.css';
 
@@ -79,6 +80,7 @@ function AppContent() {
           <Route path="/spain" element={<Spain />} />
           <Route path="/japan" element={<Japan />} />
           <Route path="/art-gallery" element={<ArtGallery />} />
+          <Route path="/madhya-pradesh" element={<MpPage />} />
         </Routes>
       </div>
     </div>

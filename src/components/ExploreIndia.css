@@ -1,162 +1,4 @@
 
-/* #virtual-tour {
-  padding: 20px;
-    text-align: center;
-  }
-  
-  #virtual-tour h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #444;
-  }
-  
-  .tour-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  .feature{
-   max-width: 10px;
-   margin: 10px;
-  }
-  .tour-content div {
-    margin: 10px;
-    padding: 25px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 200px;
-    width: 100%;
-  }
-  
-  .tour-content img {
-    max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  }
-  #tourr{
-  margin-top: 50px;
-  }
-  .tourss {
-    background-color: #f4f4f4;
-  padding: 15px;
-  width: calc(33.333% - 20px); 
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  } */
-
-
-
-
-
-
-
-
-/* General Styling */
-/* .bodyy {
-  background-color: black;
-  color: white;
-  font-family: 'Arial', sans-serif;
-}
-
-.india-intro {
-  text-align: center;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #1c1c1c;
-  border-radius: 10px;
-}
-
-
-
-
-
-
-.intro-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding: 20px;
-  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  max-width: 100%; 
-  height: 60vh; 
-  margin: 0 auto;
-}
-
-.intro-video {
-  width: 100%;
-  height: 100%; 
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  object-fit: cover;
-}
-
-
-#header-text {
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-
-.state-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 30px;
-}
-
-.state-card {
-  background-color: #282828;
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.state-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.state-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.state-card h3 {
-  font-size: 1.1rem;
-  margin: 10px 0;
-}
-
-.state-card p {
-  font-size: 0.9rem;
-  color: #d4d4d4;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1c1c1c;
-  color: #d4d4d4;
-  margin-top: 40px;
-} */
-
-
-
-
 
 
 
@@ -168,18 +10,12 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 
-/* #header-text {
-  color: #181717;
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 30px 0;
-} */
 #header-text {
   font-size: 2.5rem;
   text-align: center;
   margin: 30px 0;
   background: black;
-  /* linear-gradient(90deg, #532a02, #cac8c8, #072c04); Saffron, White, Green */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.4px #181717; 
@@ -217,8 +53,7 @@ footer {
   bottom: 15px;
   left: 20px;
   background: rgba(245, 244, 244, 0.281);
-  /* rgba(0, 0, 0, 0.6);
-  padding: 10px 15px; */
+
   border-radius: 8px;
 }
 
@@ -238,25 +73,22 @@ footer {
   gap: 20px;
   padding: 50px;
 }
-/* .state-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 50px;
-} */
+
 
 
 .state-card {
-  background-color: #edebeb;
-  /* #1c1c1c; */
+  background-color: rgb(245, 244, 244);
+/* edebeb */
   padding: 15px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-.state-card:hover {
+
+
+ .state-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -266,7 +98,7 @@ footer {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 15px;
-}
+} 
 
 .state-card h3 {
   font-size: 1.2rem;
@@ -288,13 +120,13 @@ footer {
 
 
 /* Responsive .slider-item */
-.slider-item img {
+/* .slider-item img {
   width: 100%;
-  max-height: 700px; /* Adjust to ensure compatibility with smaller screens */
+  max-height: 700px; 
   object-fit: cover;
 }
 
-/* Responsive Design for State Cards */
+
 @media screen and (max-width: 768px) {
   .state-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -305,7 +137,23 @@ footer {
   .state-cards {
     grid-template-columns: 1fr;
   }
+} */
+
+@media screen and (max-width: 768px) {
+  .state-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .state-cards {
+    grid-template-columns: 1fr;
+  }
+  .slider-item img {
+    max-height: 400px;
+  }
+}
+
 
 
 /* ExploreIndia.css */
@@ -373,88 +221,6 @@ footer {
 }
 
 
-/* Existing styles remain the same */
-
-/* Festivals Section */
-/* .festivals-section {
-  margin-top: 60px;
-}
-
-.festival-header {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.festivals-flow {
-  display: flex;
-  overflow-x: auto;
-  gap: 30px;
-  padding: 20px 50px;
-}
-
-.festival-item {
-  position: relative;
-  min-width: 400px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.festival-item img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.festival-item:hover {
-  transform: scale(1.05);
-}
-
-.festival-text {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.festival-text h3 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.festival-text p {
-  font-size: 1rem;
-} */
-/* .view-all-states-section {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.view-all-states {
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 50%;
-  background: #f0f0f0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.view-all-states:hover {
-  transform: scale(1.1);
-}
-
-.view-all-states p {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}  */
-
-
-
 
 .view-all-states-section {
   display: flex;
@@ -485,121 +251,6 @@ footer {
 
 
 
-
-
-
-
-/* .festival-slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
- 
-}
-
-.slider-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-
-}
-
-.prev-arrow {
-  left: 0;
-}
-
-.next-arrow {
-  right: 0;
-}
-
-.festivals-slider {
-  width: 50%;
-  
-  display: flex;
-  justify-content: center;
-}
-
-.slider-item {
-  text-align: center;
-}
-
-.slider-text {
-  margin-top: 10px;
-} */
-
-
-
-/* .festivals-section {
-  margin-top: 60px;
-}
-
-.festival-header {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.festival-slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 400px; 
-}
-
-.slider-arrow {
-  background: none;
-  color: white;
-  background-color: #0a0707;
-  border: none;
-  border-radius: 50%;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  top: 50%; 
-  transform: translateY(-50%); 
-}
-
-.prev-arrow {
-  left: 10px; 
-}
-
-.next-arrow {
-  right: 10px; 
-
-.festivals-slider {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  height: 100%; 
-}
-
-.slider-item-f {
-  text-align: center;
-  height: 100%; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.slider-item-f img {
-  max-height: 350px; 
-  width: auto;
-  max-width: 100%; 
-  margin: 0 auto; 
-  border-radius: 2%;
-}
-
-.slider-text-f {
-  margin-top: 10px;
-  height: auto; 
-  background-color: #130101;
-  color: rgb(181, 172, 172);
- 
-} */
 
 .festival-header {
   text-align: center;
