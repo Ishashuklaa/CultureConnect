@@ -3,17 +3,31 @@
 
 
 /* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .explore-body {
-  background-color: rgb(245, 244, 244);
+  /* background-color: rgb(245, 244, 244); */
+  
+  /* background-color: #d9ddcd; */
+  background-image: url("https://miro.medium.com/max/1400/1*HOyA7nA-CKsnYe-LWn_Y0w.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
   /* #0d0d0d; */
   color: black;
   font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #header-text {
   font-size: 2.5rem;
   text-align: center;
-  margin: 30px 0;
+  /* margin: 30px 0; */
   background: black;
 
   -webkit-background-clip: text;
@@ -65,49 +79,106 @@
 .slider-text p {
   font-size: 1rem;
 }
-
-/* State Cards: 4 in a Row */
+/* State Cards Section: Grid Layout */
 .state-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   padding: 50px;
+  position: relative;
+  /* background-color: #eece7c;  */
+  /* background-image: url("https://wallpaperaccess.com/full/1346522.jpg"); */
+  z-index: 1;
 }
 
-
-
+/* Individual State Card Styling */
 .state-card {
-  background-color: rgb(245, 244, 244);
-/* edebeb */
-  padding: 15px;
-  border-radius: 10px;
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #f2f2f2); /* Subtle gradient background */
+  border-radius: 20px 20px 40px 40px; /* Curved bottom edges */
+  overflow: hidden;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 20px 15px 30px; /* Adjusted padding */
+  transform: rotate(-1deg); /* Slight tilt for a dynamic look */
 }
 
-
-
- .state-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+/* Hover Effect: Lift and Rotate Slightly */
+.state-card:hover {
+  transform: translateY(-10px) rotate(1deg); /* Slight rotation and lift */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* Circular State Image */
 .state-card img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* border: 6px solid #ff7f50;  */
   border-radius: 50%;
   margin-bottom: 15px;
-} 
-
-.state-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
+.state-card:hover img {
+  transform: scale(1.1); /* Slight image zoom on hover */
+}
+
+/* State Card Title */
+.state-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.state-card:hover h3 {
+  color: #288876; /* Highlight text on hover */
+}
+
+/* State Card Description */
 .state-card p {
   font-size: 0.9rem;
-  color: #6c6a6a;
+  color: #777;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Decorative Line under Title */
+.state-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #045554; /* Gradient footer effect */
+}
+
+/* Hover Animation for Title Decoration */
+.state-card:hover::before {
+  height: 14px; /* Slightly increases the height */
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .state-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .state-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .state-card h3 {
+    font-size: 1.2rem;
+  }
 }
 
 footer {
@@ -118,26 +189,6 @@ footer {
   margin-top: 40px;
 }
 
-
-/* Responsive .slider-item */
-/* .slider-item img {
-  width: 100%;
-  max-height: 700px; 
-  object-fit: cover;
-}
-
-
-@media screen and (max-width: 768px) {
-  .state-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .state-cards {
-    grid-template-columns: 1fr;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .state-cards {
@@ -160,22 +211,32 @@ footer {
 
 .navbar {
   background-color: rgb(245, 244, 244);
-  color: black;
+  color: rgb(231, 231, 231);
   overflow: hidden;
   position: sticky;
-  top: 0;
+  top: 0; 
   z-index: 1000;
+  background-color: #045554;
+  /* transition: top 0.3s ease-in-out; */
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: 10px 20px; */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: #141313;
-  background-color: rgb(245, 244, 244);
+  color: #d8dfdf;
+  /* background-color: rgb(245, 244, 244); */
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   font-size: 17px;
+  background-color: #045554;
+  
 }
 
 .navbar a:hover {
@@ -197,7 +258,7 @@ footer {
   margin-top: 8px;
   font-size: 17px;
   border: none;
-  background-color: #ccc;
+  background-color: #f5f4f4;
 }
 
 .navbar .search-container button {
@@ -205,14 +266,15 @@ footer {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #4b4949;
+  background:#04AA6D;
+  color: rgb(230, 231, 231);
   font-size: 17px;
   border: none;
   cursor: pointer;
 }
 
 .navbar .search-container button:hover {
-  background: #ccc;
+  background: #383737;
 }
 
 /* Additional styling for content alignment */
@@ -220,33 +282,60 @@ footer {
   padding-top: 50px; /* Ensure content is not hidden behind the navbar */
 }
 
-
-
+/* Container for the "View All States" Section */
 .view-all-states-section {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 40px 0; /* Slightly increased margin */
 }
 
+/* Link Styling */
 .view-all-states-link {
   text-decoration: none;
 }
 
+/* Button/Link-like View All States */
 .view-all-states {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  color: #333;
+  font-weight: 600;
+  color: white;
+  padding: 12px 24px; /* Padding for a button effect */
+  background: #045554;
+  border-radius: 50px; /* Rounded pill shape */
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  gap: 10px;
+  gap: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box-shadow */
+  margin-bottom: 70px;
 }
 
+/* Icon Animation */
 .feather-arrow-right-circle {
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out, color 0.3s;
+  font-size: 1.8rem; /* Slightly larger arrow */
+}
+
+/* Hover Effect */
+.view-all-states:hover {
+  background: linear-gradient(135deg, #7ad3cd, #3d9ca1); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Lift the button slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow */
 }
 
 .view-all-states:hover .feather-arrow-right-circle {
-  transform: translateX(10px); /* Move arrow slightly on hover */
+  transform: translateX(8px) scale(1.1); /* Move and slightly scale the arrow */
+  color: #fdd835; /* Highlight arrow with a gold color */
+}
+
+/* Text Glow Effect */
+.view-all-states span {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.view-all-states:hover span {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Glow effect on text */
 }
 
 

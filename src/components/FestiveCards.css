@@ -22,6 +22,9 @@
   }
   
   .festive-content h2 {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
     margin: 10px 0;
     font-size: 1.5em;
   }
