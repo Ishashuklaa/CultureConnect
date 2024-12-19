@@ -203,8 +203,10 @@ const CardList = () => {
 
   return (
     <div className="px-8 py-12">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Festivals Of India</h1>
+      <h1 className="text-3xl font-bold text-center">Festivals Of India</h1>
+      <div className="flex justify-between items-center  mb-8">
+    
+
         <div className="text-sm">
           <span className="mr-2">02</span>
           /

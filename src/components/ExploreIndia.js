@@ -74,15 +74,37 @@ const ExploreIndia = () => {
     { name: 'Rajasthan', imgSrc: 'https://routeprints.com/wp-content/uploads/2019/05/Rajasthan-Tradition-1.png', description: 'Discover Rajasthan.' },
     { name: 'Tamil Nadu', imgSrc: 'https://i.pinimg.com/originals/1a/46/87/1a46879a050f9d5cb30acbc4fa4c9018.jpg', description: 'Explore Tamil Nadu.' },
     { name: 'Himachal Pradesh', imgSrc: 'https://usercontent2.hubstatic.com/8590865_f260.jpg', description: 'Discover Himachal Pradesh.' },
+    { name: 'Assam', imgSrc: 'https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2020/10/11135127/Kati-Bihu-festival-celebrated-across-Assam.jpg', description: 'Explore Assam.' },
+    { name: 'Uttar Pradesh', imgSrc: 'https://www.holidify.com/images/cmsuploads/compressed/14188021593_f6d726f31b_b_20170829183831.jpg', description: 'Discover Uttar Pradesh.' },
+    { name: 'Sikkim', imgSrc: 'https://www.lifestylefun.net/wp-content/uploads/2022/06/folk-dance-of-sikkim.jpg', description: 'Explore Sikkim.' },
+    { name: 'Punjab', imgSrc: 'https://s4.scoopwhoop.com/ish/Punjab/19.jpg', description: 'Discover Punjab.' },
+  
+  
   ];
 
   const culturalPlaces = [
-    { name: 'Taj Mahal', imgSrc: 'https://cdn.mos.cms.futurecdn.net/asMq6cVwZsckf8sGUaRJU4.jpg', description: 'Iconic symbol of love.' },
-    { name: 'Jaipur City Palace', imgSrc: 'https://media.istockphoto.com/photos/jaipur-india-chandra-mahal-palace-within-the-city-palace-picture-id487804438?k=20&m=487804438&s=612x612&w=0&h=dzYikOteZfg0v95m02ScGsf5CXR1bDBYXNeqT4gSguk=', description: 'Royal grandeur of Jaipur.' },
-    { name: 'Mathura Temple', imgSrc: 'https://www.laurewanders.com/wp-content/uploads/2023/11/Cultural-destinations-in-India-10.jpg', description: 'Birthplace of Lord Krishna.' },
-    { name: 'Meenakshi Temple', imgSrc: 'https://www.laurewanders.com/wp-content/uploads/2023/06/Things-to-do-in-Madurai-92.jpg', description: 'Best Swachh Iconic Place.' },
+    { 
+      name: 'Taj Mahal', 
+      imgSrc: 'https://cdn.mos.cms.futurecdn.net/asMq6cVwZsckf8sGUaRJU4.jpg', 
+      description: 'The Taj Mahal, located in Agra, Uttar Pradesh, was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Completed in 1653, it is a symbol of eternal love and an architectural masterpiece. Constructed using white marble, the Taj Mahal is a UNESCO World Heritage Site and one of the Seven Wonders of the World. It reflects the grandeur and cultural richness of the Mughal Empire.' 
+    },
+    { 
+      name: 'Jaipur City Palace', 
+      imgSrc: 'https://media.istockphoto.com/photos/jaipur-india-chandra-mahal-palace-within-the-city-palace-picture-id487804438?k=20&m=487804438&s=612x612&w=0&h=dzYikOteZfg0v95m02ScGsf5CXR1bDBYXNeqT4gSguk=', 
+      description: 'The Jaipur City Palace, located in Jaipur, Rajasthan, was built by Maharaja Sawai Jai Singh II in 1727. It is a stunning blend of Mughal, Rajput, and European architectural styles. The palace is a symbol of royal grandeur, housing museums, courtyards, and gardens. It remains the residence of the royal family of Jaipur. The Chandra Mahal and Mubarak Mahal are key attractions within the palace complex.' 
+    },
+    { 
+      name: 'Mathura Temple', 
+      imgSrc: 'https://www.laurewanders.com/wp-content/uploads/2023/11/Cultural-destinations-in-India-10.jpg', 
+      description: 'Mathura Temple, located in Mathura, Uttar Pradesh, is one of the holiest sites for Hindus as it marks the birthplace of Lord Krishna. The temple has been a center of pilgrimage for centuries and is a key site in the Vaishnavism tradition. The present structure is an expansion of earlier temples that date back to ancient times. The temple complex is a sacred spot, especially during festivals like Janmashtami, celebrating the birth of Lord Krishna.' 
+    },
+    { 
+      name: 'Meenakshi Temple', 
+      imgSrc: 'https://www.laurewanders.com/wp-content/uploads/2023/06/Things-to-do-in-Madurai-92.jpg', 
+      description: 'The Meenakshi Temple, located in Madurai, Tamil Nadu, is dedicated to Goddess Meenakshi (an avatar of Parvati) and her consort Lord Sundareswarar (Shiva). Built by King Kulasekara Pandya and expanded over the centuries, the temple is an architectural marvel with Dravidian-style gopurams, intricate sculptures, and vibrant artwork. It is an important pilgrimage site and a cultural hub in South India, with the Chithirai Festival being one of its major celebrations.' 
+    },
   ];
-
+  
   const festivals = [
     { name: 'Diwali', imgSrc: 'https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/10/10141531/bandi-chhor-divas.jpeg', description: 'Festival of lights celebrated with fireworks and sweets.' },
     { name: 'Holi', imgSrc: 'https://images.livemint.com/img/2023/03/06/1600x900/holi_2023_1678076615866_1678076616058_1678076616058.jpg', description: 'Festival of colors.' },
@@ -158,21 +180,7 @@ const ExploreIndia = () => {
     </a>
   </div>
 
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    className="cultural-places-slider"
-  >
-    <div className="slider-item">
-      <img src={culturalPlaces[currentSlide].imgSrc} alt={culturalPlaces[currentSlide].name} />
-      <div className="slider-text">
-        <h3>{culturalPlaces[currentSlide].name}</h3>
-        <p>{culturalPlaces[currentSlide].description}</p>
-      </div>
-    </div>
-  </motion.div>
-
+  
 
   <div>
         <TextileCategoriesWheel/>
@@ -181,7 +189,31 @@ const ExploreIndia = () => {
         <section>
           <CardList/>
         </section>
-        
+        <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  className="cultural-places-slider flex items-center gap-12"
+>
+  <div className="slider-item flex">
+    <div className="image-container  w-2/2 h-[750px]">
+      <img
+        src={culturalPlaces[currentSlide].imgSrc}
+        alt={culturalPlaces[currentSlide].name}
+        className="w-[20px] h-[20px] object-cover" 
+      />
+    </div>
+
+    <div className="description-container w-2/3 pl-12">
+      <h3 className="text-xl font-semibold">{culturalPlaces[currentSlide].name}</h3>
+      <p className="text-lg text-gray-700">{culturalPlaces[currentSlide].description}</p>
+    </div>
+  </div>
+</motion.div>
+
+
+
+
 </section>
       <Footer />
     </div>
