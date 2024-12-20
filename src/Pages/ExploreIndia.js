@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import ArtGallery from './ArtGallery'; 
-import Footer from './Footer';
+import Navbar from '../components/Navbar.js';
+import ArtGallery from './ArtGallery.js'; 
+import Footer from '../components/Footer.js';
 import './ExploreIndia.css';
-import State from './State';
-import CardList from './CardList';
+import State from '../components/State.js';
+import CardList from '../components/CardList.js';
 // index.js or App.js
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import TextileCategoriesWheel from './TextileCategoriesWheel.js';
+import TextileCategoriesWheel from '../components/TextileCategoriesWheel.js';
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
-
+import "./ExploreIndia.css"
 
 const ExploreIndia = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

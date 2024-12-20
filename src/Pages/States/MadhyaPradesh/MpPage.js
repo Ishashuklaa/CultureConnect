@@ -53,9 +53,6 @@ const MpPage = () => {
     { id: 6, image: "https://magikindia.com/wp-content/uploads/2017/05/khajuraho-1.jpg", city: "Khajuraho", description: "Temples and Art" },
   ];
 
-
-
-
   const artCraft = [
     { id: 1, image: "https://inifdahmedabad.com/wp-content/uploads/2020/11/process-of-manufacture-of-chanderi-1.png", title: "Chanderi Sarees" },
     { id: 2, image: "https://media.cntraveller.in/wp-content/uploads/2016/12/bamboo-art.jpg", title: "Wooden Crafts" },
@@ -71,17 +68,7 @@ const MpPage = () => {
     { id: 3, image: "https://www.hellotravel.com/stories/thumb/places-to-eat-best-malpuas-in-india-6.jpg", title: "Malpua" },
   ];
 
-  // const heritage = [
-  //   { id: 1, image: "https://www.templepurohit.com/wp-content/uploads/2017/06/Khajuraho-temples.jpg", title: "Khajuraho Temples" },
-  //   { id: 2, image: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Sanchi_stupa_panorama.jpg", title: "Sanchi Stupa" },
-  //   { id: 3, image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mandu_palace.jpg", title: "Mandu Fort" },
-  // ];
 
-  // const spirituality = [
-  //   { id: 1, image: "https://www.shreepeeth.com/images/gallery/ujjain-mahakal/ujjain-mahakal-shiva.jpg", title: "Mahakaleshwar Temple" },
-  //   { id: 2, image: "https://www.holidify.com/images/compressed/798.jpg", title: "Omkareshwar" },
-  //   { id: 3, image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Amarkantak.jpg", title: "Amarkantak" },
-  // ];
   const spirituality = [
     { id: 1, image: "https://www.shreepeeth.com/images/gallery/ujjain-mahakal/ujjain-mahakal-shiva.jpg", title: "Mahakaleshwar Temple" },
     { id: 2, image: "https://www.holidify.com/images/compressed/798.jpg", title: "Omkareshwar" },
@@ -295,41 +282,7 @@ const sliderSettings = {
         </div>
       </section>
 
-     
-      {/* Art and Craft Section */}
-      {/* <Section title="ART AND CRAFT OF MP" items={artCraft} /> */}
-{/*      
-<section className="relative py-16 bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 text-white">
-  <h2 className="text-4xl font-serif text-center mb-12">ART AND CRAFT OF MP</h2>
-  <div className="relative flex items-center justify-center overflow-hidden">
-    <div className="relative w-96 h-96 rounded-full border-4 border-white flex items-center justify-center animate-spin-slow">
-      
-      {artCraft.map((item, index) => (
-        <div
-          key={item.id}
-          className={`absolute w-24 h-24 transform origin-center 
-                      rotate-[${(360 / artCraft.length) * index}deg]`}
-          style={{
-            transformOrigin: "50% 200px",
-            transform: `rotate(${(360 / artCraft.length) * index}deg) translateY(-50%)`,
-          }}
-        >
-          <div className="relative w-60 h-60 bg-white text-black rounded-full shadow-lg hover:scale-110 transition-transform">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full rounded-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <p className="text-xs text-white text-center px-2">{item.title}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 pointer-events-none" />
-  </div>
-</section> */}
+    
 <section className="relative py-20 bg-gradient-to-r from-brown-600 via-yellow-700 to-green-600
 
  text-white">
@@ -477,25 +430,3 @@ const sliderSettings = {
 };
 
 export default MpPage;
-
-
-
-
-
-
-
-
-
-
-
-
- {/* <div className="flex justify-center space-x-8">
-            {['ART AND CRAFT', 'CUISINE', 'SOUND & LIGHT SHOW', 'WALKS AND TRAILS'].map((item) => (
-              <button
-                key={item}
-                className="px-6 py-3 bg-transparent border border-white text-white hover:bg-red-900 hover:border-red-900 transition-colors"
-              >
-                {item}
-              </button>
-            ))}
-          </div> */}

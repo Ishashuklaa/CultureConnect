@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './ExploreIndia.css';
+import '../Pages/ExploreIndia.css';
 
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState('');

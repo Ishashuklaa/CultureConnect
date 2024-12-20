@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';  // Import Navbar component
 import Footer from './Footer';
-import './ExploreIndia.css';
+import '../Pages/ExploreIndia.css';
 
 
 const State = () => {

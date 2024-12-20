@@ -65,7 +65,7 @@
 
 import React from 'react';
 import './ArtGallery.css';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 const artData = [
   {

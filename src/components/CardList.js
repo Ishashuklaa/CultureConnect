@@ -1,87 +1,3 @@
-// // CardList.js
-// import React from "react";
-// import Slider from "react-slick";
-// import "./CardList.css";
-// import FestiveCards from "./FestiveCards";
-
-// const cardData = [
-//   {
-//     title: "Diwali",
-//     description: "Diwali is the festival of lights, celebrated by millions across the world.",
-//     imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/diwali(1)_20170918202303.jpg",
-//   },
-//   {
-//     title: "Holi",
-//     description: "Holi is the festival of colors, celebrated with vibrant colors and joy.",
-//     imageUrl: "https://hellogiggles.com/wp-content/uploads/sites/7/2020/03/10/holi-2000.jpg",
-//   },
-//   {
-//     title: "Navratri",
-//     description: " Navratri is a nine-day celebration of the goddesses Durga, Lakshmi, and Sarasvati, held in September–October.",
-//     imageUrl: "https://prod-c2i.s3.amazonaws.com/articles/150599089859c398f203679.jpg",
-//   },
-//   {
-//     title: "Pongal",
-//     description: "Pongal is a harvest festival celebrated primarily in Tamil Nadu.",
-//     imageUrl: "https://thefederal.com/h-upload/2024/01/12/392474-pongal.webp",
-//   },
-//   // Add more cards as needed
-// ];
-
-// const CardList = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     nextArrow: <SampleNextArrow />,
-//     prevArrow: <SamplePrevArrow />,
-//   };
-
-//   return (
-//     <div className="card-list">
-//       <h1>Festivals Of India</h1>
-//       <Slider {...settings}>
-//         {cardData.map((card, index) => (
-//           <FestiveCards
-//             key={index}
-//             title={card.title}
-//             description={card.description}
-//             imageUrl={card.imageUrl}
-//           />
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// };
-
-// // Arrow components for navigation
-// const SampleNextArrow = (props) => {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={`${className} arrow`}
-//       style={{ ...style, display: "block", background: "gray" }}
-//       onClick={onClick}
-//     />
-//   );
-// };
-
-// const SamplePrevArrow = (props) => {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={`${className} arrow`}
-//       style={{ ...style, display: "block", background: "gray" }}
-//       onClick={onClick}
-//     />
-//   );
-// };
-
-// export default CardList;
 
 import React from "react";
 import Slider from "react-slick";
@@ -136,10 +52,7 @@ const FestiveCard = ({ title, description, imageUrl }) => {
   return (
     <div className="relative w-full p-4 h-[400px]"> {/* Fixed height for uniformity */}
       <div className={`relative overflow-hidden rounded-lg group h-full`}>
-        {/* <div className="absolute top-4 left-4 z-10 bg-white rounded-full px-4 py-1">
-          <span className="text-sm">Featured</span>
-        </div> */}
-        
+   
         <div className="absolute inset-0">
           <img 
             src={imageUrl} 
@@ -153,17 +66,6 @@ const FestiveCard = ({ title, description, imageUrl }) => {
           <h2 className="text-2xl font-bold mb-2">{title}</h2>
           <p className="text-sm mb-4 opacity-90">{description}</p>
           
-          {/* <div className="flex gap-2 mb-4">
-            {tags.map((tag, index) => (
-              <span 
-                key={index}
-                className="px-3 py-1 rounded-full bg-white/20 text-sm"
-              >
-                {tag}
-              </span>
-            ))}
-          </div> */}
-
           <button className="px-4 py-2 rounded-lg bg-white text-black hover:bg-gray-100 transition-colors flex items-center gap-2">
             Know More
             <ArrowRight className="w-4 h-4" />
