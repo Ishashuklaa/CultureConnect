@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* background: 
+    url('C:\Users\isha shukla\OneDrive\Desktop\cultureconnect github\CultureConnect\src\assests\culture-bg.jpg') center/300px repeat,
+    linear-gradient(to right, #ffedd5, #ffe4e6); */
+  margin: 0;
+  padding: 0;
+}
+
+.login-form,
+.signup-form {
+  background: 
+    url('C:\Users\isha shukla\OneDrive\Desktop\cultureconnect github\CultureConnect\src\assests\culture-bg.jpg') center/300px repeat,
+    linear-gradient(to right, #ffedd5, #ffe4e6);
+  max-width: 600px;
+  margin: 6rem auto;
+  padding: 2.5rem;
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.login-form h2,
+.signup-form h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #dbe2e9;
+  background-color: rgb(231, 143, 96);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.login-form input,
+.signup-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus,
+.signup-form input:focus {
+  border-color: #040302;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(243, 114, 44, 0.2);
+}
+
+.login-form button,
+.signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #010101, #090909);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #f94144, #f3722c);
+}
+
+.login-form p,
+.signup-form p {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
