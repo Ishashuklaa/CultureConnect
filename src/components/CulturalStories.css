@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #659aa0;
 }
 
 #cultural-stories {
@@ -113,7 +113,7 @@ button + button:hover {
 
 .form-wrapper {
   position: relative;
-  background: #da9d9d;
+  background: #6fbdc6;
   padding: 20px;
   border-radius: 10px;
   z-index: 1001;

@@ -13,7 +13,7 @@
   /* background-color: rgb(245, 244, 244); */
   
   /* background-color: #d9ddcd; */
-  background-image: url("https://miro.medium.com/max/1400/1*HOyA7nA-CKsnYe-LWn_Y0w.jpeg");
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*HOyA7nA-CKsnYe-LWn_Y0w.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   /* #0d0d0d; */
@@ -86,43 +86,41 @@
   gap: 30px;
   padding: 50px;
   position: relative;
-  /* background-color: #eece7c;  */
-  /* background-image: url("https://wallpaperaccess.com/full/1346522.jpg"); */
+  
   z-index: 1;
 }
 
 /* Individual State Card Styling */
 .state-card {
   position: relative;
-  background: linear-gradient(135deg, #ffffff, #f2f2f2); /* Subtle gradient background */
-  border-radius: 20px 20px 40px 40px; /* Curved bottom edges */
+  background: linear-gradient(135deg, #ffffff, #f2f2f2); 
+  border-radius: 20px 20px 40px 40px; 
   overflow: hidden;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
-  padding: 20px 15px 30px; /* Adjusted padding */
-  transform: rotate(-1deg); /* Slight tilt for a dynamic look */
+  padding: 20px 15px 30px; 
+  transform: rotate(-1deg); 
 }
 
 /* Hover Effect: Lift and Rotate Slightly */
 .state-card:hover {
-  transform: translateY(-10px) rotate(1deg); /* Slight rotation and lift */
+  transform: translateY(-10px) rotate(1deg); 
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* Circular State Image */
 .state-card img {
-  width: 150px;
+  width: 150px;   
   height: 150px;
   object-fit: cover;
-  /* border: 6px solid #ff7f50;  */
   border-radius: 50%;
   margin-bottom: 15px;
   transition: transform 0.3s ease-in-out;
 }
 
 .state-card:hover img {
-  transform: scale(1.1); /* Slight image zoom on hover */
+  transform: scale(1.1); 
 }
 
 /* State Card Title */

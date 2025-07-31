@@ -69,13 +69,14 @@ const ExploreIndia = () => {
 
   const states = [
     { name: 'Madhya Pradesh', imgSrc: 'https://www.humsamvet.com/uploads/images/2023/04/image_1200x675_643565540270b.jpg', description: 'Explore Madhya Pradesh.', link: '/madhya-pradesh'},
+     { name: 'Uttar Pradesh', imgSrc: 'https://www.holidify.com/images/cmsuploads/compressed/14188021593_f6d726f31b_b_20170829183831.jpg', description: 'Discover Uttar Pradesh.' , link: '/uttar-pradesh'},
     { name: 'Kerala', imgSrc: 'http://www.mnkindustry.com/wp-content/uploads/2017/11/dsc_0667.jpg', description: 'Discover Kerala.' },
     { name: 'Maharashtra', imgSrc: 'https://rooftopapp.com/wp-content/uploads/2023/04/Tribal-Art-3.jpg', description: 'Explore Maharashtra.' },
     { name: 'Rajasthan', imgSrc: 'https://routeprints.com/wp-content/uploads/2019/05/Rajasthan-Tradition-1.png', description: 'Discover Rajasthan.' },
     { name: 'Tamil Nadu', imgSrc: 'https://i.pinimg.com/originals/1a/46/87/1a46879a050f9d5cb30acbc4fa4c9018.jpg', description: 'Explore Tamil Nadu.' },
     { name: 'Himachal Pradesh', imgSrc: 'https://usercontent2.hubstatic.com/8590865_f260.jpg', description: 'Discover Himachal Pradesh.' },
     { name: 'Assam', imgSrc: 'https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2020/10/11135127/Kati-Bihu-festival-celebrated-across-Assam.jpg', description: 'Explore Assam.' },
-    { name: 'Uttar Pradesh', imgSrc: 'https://www.holidify.com/images/cmsuploads/compressed/14188021593_f6d726f31b_b_20170829183831.jpg', description: 'Discover Uttar Pradesh.' },
+   
     { name: 'Sikkim', imgSrc: 'https://www.lifestylefun.net/wp-content/uploads/2022/06/folk-dance-of-sikkim.jpg', description: 'Explore Sikkim.' },
     { name: 'Punjab', imgSrc: 'https://s4.scoopwhoop.com/ish/Punjab/19.jpg', description: 'Discover Punjab.' },
   

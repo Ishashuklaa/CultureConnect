@@ -1,8 +1,14 @@
 
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './CulturalStories.css';
 import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import './ExploreIndia.css';
+// index.js or App.js
+import "slick-carousel/slick/slick.css";
 
 const CulturalStories = () => {
   const [stories, setStories] = useState([]);
@@ -64,7 +70,7 @@ const CulturalStories = () => {
 
   return (
     <div>
-      <header>
+      {/* <header>
         <div className="logo">CultureConnect</div>
         <nav>
           <ul>
@@ -74,7 +80,8 @@ const CulturalStories = () => {
             <li><Link to="/cultural-stories">Cultural Stories</Link></li>
           </ul>
         </nav>
-      </header>
+      </header> */}
+       <Header />
 
       <section id="cultural-stories">
         <h2>Cultural Stories from Around the World</h2>

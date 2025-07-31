@@ -63,16 +63,16 @@ const MpPage = () => {
   ];
 
   const cuisine = [
-    { id: 1, image: "https://static.toiimg.com/photo/76195669.cms", title: "Poha-Jalebi" },
-    { id: 2, image: "https://www.culturalindia.net/iliimages/Daulat-ke-chaat-in-Ujjain.jpg", title: "Daal Bafla" },
-    { id: 3, image: "https://www.hellotravel.com/stories/thumb/places-to-eat-best-malpuas-in-india-6.jpg", title: "Malpua" },
+    { id: 1, image: "https://www.stackumbrella.com/wp-content/uploads/2019/09/61401166_1092512760936170_8297260957782650698_n-1.jpg", title: "Poha-Jalebi" },
+    { id: 2, image: "https://i.ytimg.com/vi/nfpggZcnHpY/maxresdefault.jpg", title: "Daal Bafla" },
+    { id: 3, image: "https://4.bp.blogspot.com/-X3RpJVvmetc/VvAL4avm74I/AAAAAAAAD-Q/kGf6CjLBTC0wAloN6-hlEkOYjkBLuPjvA/s1600/IMG_6854.JPG", title: "Malpua" },
   ];
 
 
   const spirituality = [
-    { id: 1, image: "https://www.shreepeeth.com/images/gallery/ujjain-mahakal/ujjain-mahakal-shiva.jpg", title: "Mahakaleshwar Temple" },
-    { id: 2, image: "https://www.holidify.com/images/compressed/798.jpg", title: "Omkareshwar" },
-    { id: 3, image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Amarkantak.jpg", title: "Amarkantak" },
+    { id: 1, image: "https://www.alightindia.com/cdn/uploads/postimages/MEDIUM/Mahakaleshwar%20Outlook--8ceba3.jpg", title: "Mahakaleshwar Temple" },
+    { id: 2, image: "https://images.tv9gujarati.com/wp-content/uploads/2023/02/Omkareshwar-Temple.jpg", title: "Omkareshwar" },
+    { id: 3, image: "https://www.holidify.com/images/cmsuploads/compressed/Amarkantak_mp_20181226122150.jpg", title: "Amarkantak" },
   ];
   
   const spiritualitySliderSettings = {
@@ -111,31 +111,31 @@ const heritage = [
     id: 1,
     title: "Khajuraho Temples",
     location: "Khajuraho",
-    image: "path/to/khajuraho.jpg",
+    image: "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768,h_1024/http://saltandsandals.com/wp-content/uploads/IMG_20171031_162818_HDR-01_1511187642444-768x1024.jpg",
   },
   {
     id: 2,
     title: "Sanchi Stupa",
     location: "Sanchi",
-    image: "path/to/sanchi.jpg",
+    image: "https://travelandtrekking.com/wp-content/uploads/2018/01/Sanchi-Stupa-Madhya-Pradesh-picsc.jpg",
   },
   {
     id: 3,
     title: "Gwalior Fort",
     location: "Gwalior",
-    image: "path/to/gwalior.jpg",
+    image: "https://www.india.com/wp-content/uploads/2024/02/Gwalior-Fort.jpg",
   },
   {
     id: 4,
     title: "Bhimbetka Caves",
     location: "Raisen",
-    image: "path/to/bhimbetka.jpg",
+    image: "https://smarthistory.org/wp-content/uploads/2022/08/Bhimbetka_war_scene-1.jpg",
   },
   {
     id: 5,
     title: "Orchha Fort",
     location: "Orchha",
-    image: "path/to/orchha.jpg",
+    image: "https://www.gosahin.com/go/p/d/t1/1526837853_Orchha-Fort4.jpg",
   },
 ];
 
