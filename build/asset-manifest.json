@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.642c400d.css",
+    "main.js": "/static/js/main.09160210.js",
+    "static/js/453.3ec9f8fd.chunk.js": "/static/js/453.3ec9f8fd.chunk.js",
+    "static/media/bgvideo.mp4": "/static/media/bgvideo.09453833bef385c9f59d.mp4",
+    "static/media/culture-bg.jpg": "/static/media/culture-bg.75062307e69c8bf1c1dc.jpg",
+    "static/media/community.png": "/static/media/community.df13df72b3f800167627.png",
+    "static/media/snakeBoatRace.jpg": "/static/media/snakeBoatRace.56c7dac908f6230de370.jpg",
+    "static/media/tajMohotsav.webp": "/static/media/tajMohotsav.dc514832eba84045b094.webp",
+    "static/media/makarSankranti.jpg": "/static/media/makarSankranti.081f8dfd933a367c0c1d.jpg",
+    "static/media/logo.png": "/static/media/logo.fadc1dece2410ed9116f.png",
+    "static/media/himalyas.jpeg": "/static/media/himalyas.b206f95ab12d88ce8471.jpeg",
+    "static/media/kerlacul.jpeg": "/static/media/kerlacul.7e14393384f68dc2bf77.jpeg",
+    "static/media/holi.jpeg": "/static/media/holi.7e4b2c5935317810cb16.jpeg",
+    "static/media/kannadaCul.jpeg": "/static/media/kannadaCul.a755efc92e70f86bfae1.jpeg",
+    "static/media/tamilCul.jpeg": "/static/media/tamilCul.e374ec2aaa6e46456cde.jpeg",
+    "static/media/maharashtraCul.jpeg": "/static/media/maharashtraCul.a772d8fe40af66ae3329.jpeg",
+    "static/media/goa.jpeg": "/static/media/goa.4ecdd8cbd85ab7a3fdb2.jpeg",
+    "static/media/punjabCul.jpeg": "/static/media/punjabCul.19c543c02bc67a597be4.jpeg",
+    "static/media/rajasCul.jpeg": "/static/media/rajasCul.a1f4070d77f5a3f9ca53.jpeg",
+    "static/media/northeastCul.jpeg": "/static/media/northeastCul.15632e57a877e92ae7d7.jpeg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.642c400d.css.map": "/static/css/main.642c400d.css.map",
+    "main.09160210.js.map": "/static/js/main.09160210.js.map",
+    "453.3ec9f8fd.chunk.js.map": "/static/js/453.3ec9f8fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.642c400d.css",
+    "static/js/main.09160210.js"
+  ]
+}
