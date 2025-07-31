@@ -7,24 +7,23 @@ import CulturalStories from './components/CulturalStories';
 import ArtGallery from './Pages/ArtGallery';
 import bgvideo from "./assests/bgvideo.mp4"
 import { useLocation } from 'react-router-dom';
-<<<<<<< HEAD
+
 import MpPage from './Pages/States/MadhyaPradesh/MpPage';
 
-=======
-import MpPage from './components/MpPage';
+
+// import MpPage from './components/MpPage';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import UpPage from './components/UpPage';
->>>>>>> Ishaa
+
 import './App.css';
 import UploadProduct from './Pages/UploadProduct';
 import Cart from './Pages/Cart';
 
-<<<<<<< HEAD
-=======
+
 import React, { useEffect, useState } from 'react';
 
->>>>>>> Ishaa
+
 
 
 import Shop from './Pages/Shop'; // ✅ Import the Shop page
