@@ -12,7 +12,7 @@ body {
 .login-form,
 .signup-form {
   background: 
-    url('C:\Users\isha shukla\OneDrive\Desktop\cultureconnect github\CultureConnect\src\assests\culture-bg.jpg') center/300px repeat,
+    url('../assests/culture-bg.jpg') center/300px repeat,
     linear-gradient(to right, #ffedd5, #ffe4e6);
   max-width: 600px;
   margin: 6rem auto;
